@@ -74,6 +74,7 @@ public class AllySampleTest {
 		Results results = builder.analyze(driver, driver.findElement(By.tagName("div")));
 		List<Rule> violations = results.getViolations();
 		System.out.println("Number of Violations with in tag name :" + violations.size());
+		System.out.println("Updated by tester 1");
 		AxeReporter.writeResultsToJsonFile(reportFile, results);
 		AxeReporter.writeResultsToTextFile(reportFile, violations);
 		//Assert.assertEquals(violations.size(), 5, violations.size() + " Violations are found." );
